@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 
 class ErrorBoundaryExample extends Component {
   constructor(props) {
@@ -13,8 +13,8 @@ class ErrorBoundaryExample extends Component {
   componentDidCatch() {
     this.setState({
       hasError: true,
-      error: error,
-      errorInfo: errorInfo,
+      // error: error,
+      // errorInfo: errorInfo,
     });
   }
 
